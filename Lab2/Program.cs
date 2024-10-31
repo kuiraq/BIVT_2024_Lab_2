@@ -340,7 +340,7 @@ public class Program
         {
             double.TryParse(Console.ReadLine(), out x);
             double.TryParse(Console.ReadLine(), out y);
-            if (!(x <=0 || x >= Math.PI) && y <= Math.Sin(x))
+            if (!(x <0 || x > Math.PI) && y <= Math.Sin(x) && y >= 0)
             {
                 answer ++;
             }
@@ -631,7 +631,7 @@ public class Program
             {
                 break;
             }
-            if (!(x <= 0 || x >= Math.PI) && y <= Math.Sin(x))
+            if (!(x < 0 || x > Math.PI) && y <= Math.Sin(x) && y >= 0)
             {
                 answer++;
             }
